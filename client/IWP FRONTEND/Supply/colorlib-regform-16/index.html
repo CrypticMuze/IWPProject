@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Place Order</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="Medi.jpg" alt="">
+                    <div class="signup-img-content">
+                        <h2>Place Order</h2>
+                        <p>for stocks!</p>
+                    </div>
+                </div>
+                <div class="signup-form">
+                    <form method="post" class="register-form" action="bb_supply.php" id="register-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="first_name" class="required">Needles</label>
+                                    <input type="text" name="needles" placeholder="Enter Quantity.." id="needles" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="last_name" class="required">Beds</label>
+                                    <input type="text" placeholder="Enter Quantity.." name="beds" id="beds" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="company" class="required">Cotton</label>
+                                    <input type="text" placeholder="Enter Quantity.."name="cotton" id="cotton" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="email" class="required">Blood Container</label>
+                                    <input type="text"  placeholder="Enter Quantity.." name="blood_container" id="blood_container" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="phone_number" class="required">Company Name</label>
+                                    <input type="text" placeholder="Company Name.."name="company_name" id="company_name" />
+                                </div>
+                            </div>
+							<div>
+                                <div class="form-input">
+                                    <label for="phone_number" class="required">Merchant ID</label>
+                                    <input type="text" name="merchant_id" placeholder="Merchant ID.." id="merchant_id" />
+                                </div>
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="payment">Payment Mode</label>
+                                        <a href="#" class="form-link">Payment Detail</a>
+                                    </div>
+                                    <div class="form-radio-group">            
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="payment_mode" value="Cash" id="cash" checked>
+                                            <label for="cash">Cash</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="payment_mode" value="Cheque" id="cheque">
+                                            <label for="cheque">Cheque</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="payment_mode" value="Demand Draft" id="demand">
+                                            <label for="demand">Demand Draf</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="chequeno">DD / Cheque No.</label>
+                                    <input type="text" name="dd_cheque_no" placeholder="DD/Cheque No.." id="chequeno" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="blank_name">Drawn on ( Bank Name)</label>
+                                    <input type="text" name="drawn_on" placeholder="Bank.." id="blank_name" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="payable">Payable at</label>
+                                    <input type="text" name="payable_at" placeholder="Payble at.." id="payable" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+                            <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
